@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pagina Producto</title>
+		<link rel="stylesheet" href="menu.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+                <ul>
+                        <li><a href="index.html">Inicio</a></li>   
+                </ul>
+            </nav>
+			<img class="logo-2" src="Imagenes/Logo_definitivo-removebg-preview.png" alt="">
+		</header>
+		<div class="carrito" id="carrito">
+			<div class="header-carrito">
+				<h2><div class="header-carrito">
+					<h2><img src="Imagenes/car.jpg" alt="Carrito de compras"></h2>
+				</div>
+				</h2>
+			</div>
+
+			<div class="carrito-items">
+				<!-- 
+				<div class="carrito-item">
+					<img src="img/boxengasse.png" width="80px" alt="">
+					<div class="carrito-item-detalles">
+						<span class="carrito-item-titulo">Box Engasse</span>
+						<div class="selector-cantidad">
+							<i class="fa-solid fa-minus restar-cantidad"></i>
+							<input type="text" value="1" class="carrito-item-cantidad" disabled>
+							<i class="fa-solid fa-plus sumar-cantidad"></i>
+						</div>
+						<span class="carrito-item-precio">$15.000,00</span>
+					</div>
+				   <span class="btn-eliminar">
+						<i class="fa-solid fa-trash"></i>
+				   </span>
+				</div>
+				<div class="carrito-item">
+					<img src="img/skinglam.png" width="80px" alt="">
+					<div class="carrito-item-detalles">
+						<span class="carrito-item-titulo">Skin Glam</span>
+						<div class="selector-cantidad">
+							<i class="fa-solid fa-minus restar-cantidad"></i>
+							<input type="text" value="3" class="carrito-item-cantidad" disabled>
+							<i class="fa-solid fa-plus sumar-cantidad"></i>
+						</div>
+						<span class="carrito-item-precio">$18.000,00</span>
+					</div>
+				   <button class="btn-eliminar">
+						<i class="fa-solid fa-trash"></i>
+				   </button>
+				</div>
+				 -->
+			</div>
+			<div class="carrito-total">
+				<div class="fila">
+					<strong>Tu Total</strong>
+					<span class="carrito-precio-total">
+						$0
+					</span>
+				</div>
+				<button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+				<button id="eliminar-todos">Vaciar Carrito</button>
+
+			</div>
+		</div>
+		<div class="container-title">Manillas</div>
+
+		<main>
+			<div class="container-img">
+				<img
+					src="Imagenes/manilla 1.jpg"
+					alt="imagen-producto"
+				/>
+			</div>
+			<div class="container-info-product">
+				<div class="container-price">
+					<span>$5.000</span>
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+
+				<div class="container-details-product">
+					<div class="form-group">
+						<label for="colour">Color</label>
+						<select name="colour" id="colour">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="rojo">Rojo</option>
+							<option value="blanco">Blanco</option>
+							<option value="beige">Beige</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="size">Talla</label>
+						<select name="size" id="size">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="40">40</option>
+							<option value="42">42</option>
+							<option value="43">43</option>
+							<option value="44">44</option>
+						</select>
+					</div>
+					<button class="btn-clean">Limpiar</button>
+				</div>
+
+				<div class="container-add-cart">
+					<div class="container-quantity">
+						<input
+							type="number"
+							placeholder="1"
+							value="1"
+							min="1"
+							class="input-quantity"
+						/>
+						<div class="btn-increment-decrement">
+							<i class="fa-solid fa-chevron-up" id="increment"></i>
+							<i class="fa-solid fa-chevron-down" id="decrement"></i>
+						</div>
+					</div>
+					<button class="boton-item" id="agregar-carrito">Agregar al Carrito</button>
+				</div>
+
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Laboriosam iure provident atque voluptatibus
+							reiciendis quae rerum, maxime placeat enim cupiditate
+							voluptatum, temporibus quis iusto. Enim eum qui delectus
+							deleniti similique? Lorem, ipsum dolor sit amet
+							consectetur adipisicing elit. Sint autem magni earum est
+							dolorem saepe perferendis repellat ipsam laudantium cum
+							assumenda quidem quam, vero similique? Iusto officiis
+							quod blanditiis iste?
+						</p>
+					</div>
+				</div>
+
+				<div class="container-additional-information">
+					<div class="title-additional-information">
+						<h4>Información adicional</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-additional-information hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-reviews">
+					<div class="title-reviews">
+						<h4>Reseñas</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-reviews hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+
+				<div class="container-social">
+					<span>Compartir</span>
+					<div class="container-buttons-social">
+						<a href="https://www.facebook.com/profile.php?id=61557900306891"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://twitter.com/BraceletStyle10"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://www.instagram.com/braceletstyle10/?utm_source=qr&igsh=dDZzamZ1ODd6cXd0"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section class="container-related-products">
+			<h2>Productos Relacionados</h2>
+			<div class="card-list-products">
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="Imagenes/manilla 2.jpg"
+							alt="producto-1"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+                            <i><a href="comprar1.2.html">Nike - Manilla</a></i>
+							<p class="category">Footwear,</p>
+						</div>
+						<div class="price">$5.000</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="Imagenes/manilla 3.jpg"
+							alt="producto-2"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+                            <i><a href="comprar1.3.html">Escorpion - Manilla</a></i>
+							<p class="category">Footwear, </p>
+						</div>
+						<div class="price">$5.000</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img
+							src="Imagenes/manilla 4.jpg"
+							alt="producto-3"
+						/>
+					</div>
+					<div class="info-card">
+						<div class="text-product">
+                            <i><a href="comprar1.4.html">Reggue - Manilla</a></i>
+							<p class="category">Footwear,</p>
+						</div>
+						<div class="price">$5.000</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p>Footer</p>
+		</footer>
+
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="carrito2.js"></script>
+	</body>
+</html>
